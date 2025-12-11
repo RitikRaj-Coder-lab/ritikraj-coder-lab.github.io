@@ -1,25 +1,99 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>RITIk PORTFOLIO</title>
-    <style>
-      body {
-        font-family: Arial;
-        background: #f5f5f5;
-        padding: 20px;
-      }
-      .card {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1>Hello, I'm Ritik 👋</h1>
-      <p>Cybersecurity learner | AI enthusiast | Future Computer Expert</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ritwik — Portfolio</title>
+
+  <!-- Fonts: Manrope + JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="dot">•</span>
+      <span class="name">Ritwik</span>
     </div>
-  </body>
+    <nav class="links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1 class="title">Ritwik — Cybersecurity & Software</h1>
+        <p class="lead">Learning cybersecurity, building tools, and exploring AI. I write clean code, break things, then fix them.</p>
+
+        <div class="cta-row">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="https://github.com/your-username" target="_blank">GitHub</a>
+        </div>
+
+        <div class="terminal">
+          <code id="typer">&gt; building: portfolio — initializing...</code>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card profile-card">
+          <div class="p-head">
+            <div class="p-name">Ritwik</div>
+            <div class="p-role">Cybersecurity Learner</div>
+          </div>
+          <div class="p-body">
+            <p>Tools: Python · Bash · Flask · TryHackMe</p>
+            <div class="small meta"><span>&gt; Location</span> India</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="proj">
+          <h3>Spam/Ham Detector</h3>
+          <p>Flask UI + BART model (experiment).</p>
+          <div class="meta">Python · Flask · ML</div>
+          <a class="proj-link" href="#">View repo →</a>
+        </article>
+
+        <article class="proj">
+          <h3>OWASP TryHackMe Notes</h3>
+          <p>Writeups and cheatsheets for tasks (crypto, auth, XSS).</p>
+          <div class="meta">Security · Writeups</div>
+          <a class="proj-link" href="#">View repo →</a>
+        </article>
+
+        <!-- Add more project cards -->
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">Bash</span>
+        <span class="chip">Flask</span>
+        <span class="chip">SSH</span>
+        <span class="chip">Networking</span>
+        <span class="chip">TryHackMe</span>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a> · GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
+    </section>
+
+    <footer class="foot">© <span id="yr"></span> Ritwik — Built with ❤</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
 </html>
