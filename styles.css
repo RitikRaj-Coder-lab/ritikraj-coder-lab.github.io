@@ -106,3 +106,12 @@ body.dark .proj,
 body.dark .profile-card{
   background:rgba(20,24,40,0.8);
 }
+
+/* =========================
+   SKILL RADAR
+========================= */
+
+.radar-wrap{
+  max-width:400px;
+  margin-top:20px;
+}
