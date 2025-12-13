@@ -13,3 +13,12 @@ function typerLoop(){
   setTimeout(typerLoop, 2200);
 }
 typerLoop();
+// DARK MODE TOGGLE
+const toggleBtn = document.getElementById("themeToggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  toggleBtn.textContent =
+    document.body.classList.contains("dark") ? "☀" : "🌙";
+});
