@@ -115,3 +115,17 @@ body.dark .profile-card{
   max-width:400px;
   margin-top:20px;
 }
+
+/* NOTHING-STYLE RADAR GLOW */
+.radar-wrap canvas {
+  filter: drop-shadow(0 0 8px rgba(0,255,163,0.25));
+  transition: filter 0.3s ease;
+}
+
+body:not(.dark) .radar-wrap canvas {
+  filter: drop-shadow(0 0 8px rgba(0,209,255,0.25));
+}
+
+.radar-wrap canvas:hover {
+  filter: drop-shadow(0 0 16px rgba(0,255,163,0.5));
+}
