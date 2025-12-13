@@ -76,3 +76,33 @@ body{
   .hero{grid-template-columns:1fr; }
   .grid{grid-template-columns:1fr}
 }
+
+/* =========================
+   DARK MODE
+========================= */
+
+.theme-toggle{
+  border:none;
+  background:rgba(10,10,10,0.05);
+  padding:8px 10px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+/* Dark theme variables */
+body.dark{
+  --bg:#0B0F1A;
+  --card:rgba(20,24,40,0.7);
+  --glass:rgba(20,24,40,0.6);
+  --text:#E6ECFF;
+  --muted:#9AA4C1;
+  --accent:#00FFA3;
+  --mono-bg:#050814;
+  --mono-text:#BFFFE8;
+}
+
+body.dark .proj,
+body.dark .profile-card{
+  background:rgba(20,24,40,0.8);
+}
